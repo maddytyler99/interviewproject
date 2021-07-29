@@ -1,0 +1,1257 @@
+/*Questions:
+How do I get div to stretch all the way to the bottom?
+*/
+
+
+body{
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: circle;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    /*background-color: brown;*/
+}
+li{
+    font-size: 1vw;
+    font-family: quasimoda, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0.3vw;
+    /*background-color: darkcyan;*/
+}
+
+/*index page*/
+#maincontent{
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+    height: 100vh;
+}
+#maincontent img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#title{
+    font-family: 'Dela Gothic One', cursive;
+    color: white;
+    text-align: left;
+}
+#the{
+    font-size: 3vw;
+    position: absolute;
+    top: 12vw;
+    left: 56vw;
+    font-weight: 800;
+    font-style:normal;
+    /*background-color: aliceblue;*/
+}
+#ai{
+    /*background-color: lightcoral;*/
+    font-size: 25vw;
+    letter-spacing: -10px;
+    position: absolute;
+    top: 7vw;
+    left: 40vw;
+}
+#interview{
+    /*background-color: lightgoldenrodyellow;*/
+    font-size: 5vw;
+    font-weight: 800;
+    font-style: normal;
+    
+    position: absolute;
+    top: 37vw;
+    left: 41vw;
+}
+#title p{
+    font-size: 2.3vw;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 62vw;
+    left: 27vw;
+}
+#info{
+    width: 100%;
+}
+#entryform{
+    position: absolute;
+    top: 75vw;
+    left: 27vw;
+    text-align: left;
+}
+#entryform input[type="text"]{
+    appearance: none;
+    font-size: 1.5vw;
+    font-family: quasimoda, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid white;
+    /*border-radius: 5px;*/
+    padding: 0px;
+    
+    margin: 10px 0px 40px 0px;
+    color: lightgrey;  
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: lightgrey;
+    opacity: 1; /* Firefox */
+    font-size: 1vw;
+}
+#entryform input:focus{
+}
+
+#entryform label{
+    font-family: quasimoda, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5vw;
+    color: white;
+}
+#difficultyselection{
+    /*background-color: khaki;*/
+    width: 100%;
+    position: absolute;
+    top: 105vw;
+    left: 27vw;
+    text-align: left;
+    padding-bottom: 10vw;
+}
+#difficultyselection h2{
+    font-family: quasimoda, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5vw;
+}
+#stressbox{
+    /*background-color: red;*/
+    font-size: 1.3vw;
+    font-family: quasimoda, sans-serif;
+    font-weight: 300;
+    font-style: normal;  
+}
+#stressbox a{
+    text-decoration: none;
+    color: black;
+}
+#leftstressbox{
+    width: 8%;
+    position: relative;
+    float: left;
+    margin: 0 8% 0 0;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+#centerstressbox{
+    width: 8%;
+    position: relative;
+    float: left;
+    margin: 0 8% 0 0;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+#rightstressbox{
+    width: 8%;
+    position: relative;
+    float: left;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+@media only screen and (max-width: 600px){
+    /*index*/
+    #title p{
+        font-size: 2.3vw;
+        font-family: quasimoda, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: absolute;
+        top: 50vw;
+        left: 40vw;
+    }
+    #entryform{
+        position: absolute;
+        top: 65vw;
+        left: 40vw;
+        text-align: left;
+    }
+    #difficultyselection{
+        /*background-color: khaki;*/
+        width: 100%;
+        position: absolute;
+        top: 105vw;
+        left: 40vw;
+        text-align: left;
+        padding-bottom: 10vw;
+    }
+    
+}
+
+
+
+
+
+
+
+
+/*all*/
+#main{
+    width: 100%;
+    /*background-color: aqua;*/
+    overflow: auto;
+}
+
+
+
+/*lowstress*/
+#headingimage{
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*background-color: blue;*/
+}
+#headingtext{
+    /*background-color: aquamarine;*/
+    font-family: 'Dela Gothic One', cursive;
+    line-height: 1.7vw;
+    font-size: 0.8vw;
+    
+    position: absolute;
+    top: 2.5vw;
+    left: 7vw;
+}
+
+#interviewerimage{
+    width: 20vw;
+    position: absolute;
+    top: 16vw;
+    left: 40vw;
+    /*background-color: purple;*/
+}
+#captions{
+    width: 19vw;
+    background-color: #A5CBFA;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    text-align: left;
+    position: absolute;
+    top: 37vw;
+    left: 40vw;
+    font-size: 1vw;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+#progressbarbox{
+    width: 25%;
+    position: absolute;
+    top: 10vw;
+    left: 38vw;
+}
+#progresstext{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    float: left;
+    margin: 0.5vw 0 0 0;
+    
+    font-size: 1.3vw;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+#progressbar{
+    border: 1px solid #A5CBFA;
+    border-radius: 5vw;
+    width: 74%;
+    height: 3vw;
+    position: relative;
+    float: left;
+    overflow: auto;
+}
+#progress{
+    background-color: #A5CBFA;
+    border-radius: 5vw;
+    width: 40%;
+    height: 3.1vw;
+    position: absolute;
+    top: 0vw;
+    left: 6.2vw;
+}
+
+
+#interviewinfo{
+    width: 30vw;
+    /*background-color: blue;*/
+    position: absolute;
+    top: 16vw;
+    left: 5vw;
+    text-align: left;
+    color: white;
+}
+#interviewinfo h1{
+    font-size: 1.5vw;
+    font-family: 'Dela Gothic One', cursive;
+    display: inline;
+    color: #A5CBFA;
+}
+#interviewinfo p{
+    font-size: 1.5vw;
+    font-family: quasimoda, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: inline;
+}
+#yougotthis{
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'Dela Gothic One', cursive;
+    padding-top: 3vw;
+    color: white;
+}
+
+#doinggreat{
+    position: absolute;
+    top: 10vw;
+    left: 70vw;
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Dela Gothic One', cursive;
+    color: white;
+}
+
+#notes{
+    width: 30vw;
+    height: 32vw;
+    /*background-color: blue;*/
+    
+    position: absolute;
+    top: 16vw;
+    left: 65vw;
+}
+
+#notes h1{
+    font-size: 1.5vw;
+    font-family: 'Dela Gothic One', cursive;
+    color: #A5CBFA;
+}
+#notesbox{
+    width: 100%;
+    border-radius: 1vw;
+    border: 1px solid #A5CBFA;
+    text-align: center;
+}
+
+#notes textarea{
+    font-family: quasimoda, sans-serif;
+    font-weight: 300;
+    font-size: 1vw;
+    width: 95%;
+    margin: 0.5vw 0;
+    outline: none;
+    background-color: black;
+    border: 0;
+    color: white;
+}
+
+#exitbutton{
+    margin: 8vw 0 auto auto;
+    width: 40%;
+    text-align: center;
+    
+    border-radius: 1.3vw;
+}
+#exitbutton a{
+    text-decoration: none;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 1.4vw;
+}
+#exitbutton a:visited { color:black }
+#exitbutton a:active { color:black }
+#button{
+    background-color: #A5CBFA;
+    width: 100%;
+    padding: 0.5vw;
+    border-radius: 1.3vw;
+}
+#button:hover{
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*medium stress*/
+#medinterviewerimage{
+    width: 35vw;
+    position: absolute;
+    top: 12vw;
+    left: 33vw;
+    /*background-color: purple;*/
+}
+#medcaptions{
+    width: 34vw;
+    background-color: #F5EF72;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    text-align: left;
+    position: absolute;
+    top: 45vw;
+    left: 33vw;
+    font-size: 1vw;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+#medprogressbarbox{
+    width: 35%;
+    position: absolute;
+    top: 7vw;
+    left: 33vw;
+}
+#medprogresstext{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    float: left;
+    margin: 0.5vw 0 0 0;
+    
+    font-size: 1.3vw;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+#medprogressbar{
+    border: 1px solid #F5EF72;
+    width: 74%;
+    height: 2vw;
+    position: relative;
+    float: left;
+    overflow: auto;
+}
+#medprogress{
+    background-color: #F5EF72;
+    width: 40%;
+    height: 2.1vw;
+    position: absolute;
+    top: 0vw;
+    left: 6.2vw;
+}
+#medinterviewinfo{
+    width: 30vw;
+    /*background-color: blue;*/
+    position: absolute;
+    top: 16vw;
+    left: 5vw;
+    text-align: left;
+    color: white;
+}
+#medinterviewinfo h1{
+    font-size: 1.5vw;
+    font-family: 'Dela Gothic One', cursive;
+    display: inline;
+    color: #F5EF72;
+}
+#medinterviewinfo p{
+    font-size: 1.5vw;
+    font-family: quasimoda, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: inline;
+}
+
+#mednotes{
+    width: 25vw;
+    height: 32vw;
+    /*background-color: blue;*/
+    
+    position: absolute;
+    top: 16vw;
+    left: 70vw;
+}
+
+#mednotes h1{
+    font-size: 1.5vw;
+    font-family: 'Dela Gothic One', cursive;
+    color: #F5EF72;
+}
+#mednotesbox{
+    width: 100%;
+    border: 1px solid #F5EF72;
+    text-align: center;
+}
+
+#mednotes textarea{
+    font-family: quasimoda, sans-serif;
+    font-weight: 300;
+    font-size: 1vw;
+    width: 95%;
+    margin: 0.5vw 0;
+    outline: none;
+    background-color: black;
+    border: 0;
+    color: white;
+}
+#medbutton{
+    background-color: #F5EF72;
+    width: 100%;
+    padding: 0.5vw;
+    border-radius: 1.3vw;
+}
+#medbutton:hover{
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+/*high stress*/
+#highinterviewerimage{
+    width: 45vw;
+    position: absolute;
+    top: 5vw;
+    left: 29vw;
+    /*background-color: purple;*/
+}
+#highcaptions{
+    width: 44vw;
+    background-color: white;
+    padding: 0.5vw;
+    text-align: left;
+    position: absolute;
+    top: 46vw;
+    left: 29vw;
+    font-size: 1vw;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+#timeremaining{
+    width: 35%;
+    position: absolute;
+    top: 1vw;
+    left: 34vw;
+    font-size: 2vw;
+    font-family: 'Dela Gothic One', cursive;
+    color: white;
+}
+#timeremaining em{
+    color: #F53C31;
+    font-style: normal;
+}
+#highinterviewinfo{
+    width: 20vw;
+    /*background-color: blue;*/
+    position: absolute;
+    top: 16vw;
+    left: 5vw;
+    text-align: left;
+    color: white;
+}
+#highinterviewinfo h1{
+    font-family: 'Dela Gothic One', cursive;
+    display: inline;
+    color: #F53C31;
+    font-size: 1.2vw;
+}
+#highinterviewinfo p{
+    font-family: quasimoda, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: inline;
+    font-size: 1.2vw;
+}
+#highnotes{
+    width: 20vw;
+    height: 32vw;
+    /*background-color: blue;*/
+    position: absolute;
+    top: 15vw;
+    left: 77vw;
+}
+#highnotes h1{
+    font-size: 1.2vw;
+    font-family: 'Dela Gothic One', cursive;
+    color: #F53C31;
+}
+#highnotesbox{
+    width: 100%;
+    border: 1px solid #F53C31;
+    text-align: center;
+}
+#highnotes textarea{
+    font-family: quasimoda, sans-serif;
+    font-weight: 300;
+    font-size: 1vw;
+    width: 95%;
+    margin: 0.5vw 0;
+    outline: none;
+    background-color: black;
+    border: 0;
+    color: white;
+}
+#highbutton{
+    background-color: #F53C31;
+    width: 100%;
+    padding: 0.5vw;
+}
+#highbutton:hover{
+    background-color: white;
+}
+
+
+
+
+
+
+
+/*completepage*/
+#congratulations{
+    position: absolute;
+    margin: 0 auto;
+    top: 8vw;
+    left: 33vw;
+}
+
+#congratulations h1{
+    font-size: 4.8vw;
+    font-family: 'Dela Gothic One', cursive;
+}
+#congratulations p{
+    font-size: 1.2vw;
+    font-family: quasimoda, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+}
+#congratsbutton{
+    background-color: white;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 1vw;
+    text-align: center;
+    position: absolute;
+    top: 25vw;
+    left: 25vw;
+    
+}
+#congratsbutton a{
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: black;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1vw;;
+}
+
+
+
+
+
+#survey{
+    /*background-color: orange;*/
+    width: 100%;
+    
+}
+#surveytitle{
+    width: 100%;
+    /*background-color: aqua;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    font-size: 4vw;
+    font-family: 'Dela Gothic One', cursive;
+}
+#surveycontent{
+    /*background-color: cadetblue;*/
+    width: 100%;
+    position: absolute;
+    top: 7vw;
+    left: 0;
+}
+#surveytitles{
+    width: 50%;
+    /*background-color: aquamarine;*/
+    position: relative;
+    float: left;
+    text-align: right;
+    font-size: 2vw;
+    font-family: 'Dela Gothic One', cursive;
+    line-height: 4.5vw;
+    color: #A5CBFA;
+}
+#ratingbox{
+    /*background-color: hotpink;*/
+    width: 50%;
+    position: relative;
+    float: left;
+}
+
+#emptystar1{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 0.7vw;
+    left: 1vw;
+    z-index: 2;
+}
+
+#filledstar1{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 0.7vw;
+    left: 1vw;
+    z-index: 1;
+}
+
+#emptystar2{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 0.7vw;
+    left: 4.5vw;
+}
+
+#filledstar2{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 0.7vw;
+    left: 4.5vw;
+}
+
+#emptystar3{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 0.7vw;
+    left: 8vw;
+}
+
+#filledstar3{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 0.7vw;
+    left: 8vw;
+}
+
+#emptystar4{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 0.7vw;
+    left: 11.5vw;
+}
+
+#filledstar4{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 0.7vw;
+    left: 11.5vw;
+}
+
+#emptystar5{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 0.7vw;
+    left: 15vw;
+}
+
+#filledstar5{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 0.7vw;
+    left: 15vw;
+}
+
+#emptystar6{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 5vw;
+    left: 1vw;
+}
+#filledstar6{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 5vw;
+    left: 1vw;
+}
+#emptystar7{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 5vw;
+    left: 4.5vw;
+}
+#filledstar7{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 5vw;
+    left: 4.5vw;
+}
+#emptystar8{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 5vw;
+    left: 8vw;
+}
+#filledstar8{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 5vw;
+    left: 8vw;
+}
+#emptystar9{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 5vw;
+    left: 11.5vw;
+}
+#filledstar9{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 5vw;
+    left:11.5vw;
+}
+#emptystar10{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 5vw;
+    left: 15vw;
+}
+#filledstar10{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 5vw;
+    left:15vw;
+}
+
+
+#emptystar11{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 9.5vw;
+    left: 1vw;
+}
+#filledstar11{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 9.5vw;
+    left:1vw;
+}
+#emptystar12{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 9.5vw;
+    left: 4.5vw;
+}
+#filledstar12{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 9.5vw;
+    left:4.5vw;
+}
+#emptystar13{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 9.5vw;
+    left: 8vw;
+}
+#filledstar13{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 9.5vw;
+    left:8vw;
+}
+#emptystar14{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 9.5vw;
+    left: 11.5vw;
+}
+#filledstar14{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 9.5vw;
+    left:11.5vw;
+}
+#emptystar15{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 9.5vw;
+    left: 15vw;
+}
+#filledstar15{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 9.5vw;
+    left:15vw;
+}
+#emptystar16{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 14vw;
+    left: 1vw;
+}
+#filledstar16{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 14vw;
+    left:1vw;
+}
+#emptystar17{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 14vw;
+    left: 4.5vw;
+}
+#filledstar17{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 14vw;
+    left:4.5vw;
+}
+#emptystar18{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 14vw;
+    left: 8vw;
+}
+#filledstar18{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 14vw;
+    left:8vw;
+}
+#emptystar19{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 14vw;
+    left: 11.5vw;
+}
+#filledstar19{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 14vw;
+    left:11.5vw;
+}
+#emptystar20{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 14vw;
+    left: 15vw;
+}
+#filledstar20{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 14vw;
+    left:15vw;
+}
+
+#emptystar21{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 18.7vw;
+    left: 1vw;
+}
+#filledstar21{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 18.7vw;
+    left:1vw;
+}
+#emptystar22{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 18.7vw;
+    left: 4.5vw;
+}
+#filledstar22{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 18.7vw;
+    left:4.5vw;
+}
+#emptystar23{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 18.7vw;
+    left: 8vw;
+}
+#filledstar23{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 18.7vw;
+    left:8vw;
+}
+#emptystar24{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 18.7vw;
+    left: 11.5vw;
+}
+#filledstar24{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 18.7vw;
+    left:11.5vw;
+}
+#emptystar25{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 18.7vw;
+    left: 15vw;
+}
+#filledstar25{
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 18.7vw;
+    left:15vw;
+}
+
+.hidden
+{
+   display: none
+}
+
+#comments{
+    width: 60%;
+    /*background-color: pink;*/
+    position: absolute;
+    top: 24vw;
+    left: 1vw;
+}
+#comments textarea{
+    width: 100%;
+    border-radius: 1vw;
+    border: 1px solid white;
+    background-color: transparent;
+    font-family: quasimoda, sans-serif;
+    font-weight: 300;
+    font-size: 1vw;
+    color: white;
+    outline: none;
+}
+
+#submitbutton{
+    position: absolute;
+    top: 41vw;
+    left: 45vw;
+    width: 10%;
+    text-align: center;
+    
+    border-radius: 1.3vw;
+}
+#submitbutton a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 1.4vw;
+}
+#submitbutton a:visited { color:black }
+#submitbutton a:active { color:black }
+#subbutton{
+    background-color: white;
+    width: 100%;
+    padding: 0.5vw;
+    border-radius: 1.3vw;
+}
+
+
+
+
+
+
+/*report card*/
+#reportcardtitle{
+    /*background-color: darkblue;*/
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    font-size: 4vw;
+    font-family: 'Dela Gothic One', cursive;
+}
+#reportcardcontent{
+    /*background-color: aquamarine;*/
+    width: 100%;
+    position: absolute;
+    top: 8vw;
+    left: 0vw;
+    color: #A5CBFA;
+}
+#reportcardtitles{
+    width: 50%;
+   /* background-color: green;*/
+    
+    position: relative;
+    float: left;
+    text-align: right;
+    font-size: 1.5vw;
+    font-family: quasimoda, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+#reportcardresults{
+    width: 49%;
+    margin-left: 1%;
+    /*background-color: pink;*/
+    position: relative;
+    float: left;
+    font-size: 1.5vw;
+    font-family: quasimoda, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+#overallgrade{
+    /*background-color: lightgreen;*/
+    width: 100%;
+    position: absolute;
+    top: 42vw;
+    left: 0vw;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    font-family: 'Dela Gothic One', cursive;
+}
+#emailform{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 47vw;
+    left: 0vw;
+}
+#emailform form{
+    width: 99%;
+    margin: 0 auto;
+}
+#emailform label{
+    font-size: 1.2vw;
+    font-family: quasimoda, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #A5CBFA;
+}
+#emailform input{
+    font-size: 1.2vw;
+    font-family: quasimoda, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    border-radius: 0.5vw;
+    outline: none;
+    padding: 0.4vw;
+}
+#emailbutton{
+    position: absolute;
+    top: 47.5vw;
+    left: 77vw;
+    width: 6vw;
+    height: 2vw;
+    border-radius: 1vw;
+    background-color: white;
+    text-align: center;
+}
+#emailbutton a{
+    text-decoration: none;
+    color: black;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
